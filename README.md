@@ -25,7 +25,7 @@ There are 7 test scenes you have to test and include in the report.
 - Install Python version `3.7 ~ 3.10`
 - Install dependencies
 ```bash
-conda create -n env_shortestPath python=3.7
+conda create -n env_shortestPath python=3.10
 conda activate env_shortestPath
 git clone  https://github.com/suryapilla/Autonomous-Navigation.git
 cd Autonomous-Navigation
@@ -33,17 +33,21 @@ pip install -r requirements.txt
 ```
 
 ## Code
-### 1. main.py
-    - This is for the known environmnets
+### 1. The below command is for known environments
+```
+python main.py
+```
+<p align="center">
+<img src="gif/doorkey_rand_8--8.gif" alt="Door-key Problem" width="500"/></br>
+</p>
 
+### 2. The below command is for the shortest path in unkown environmnet
 
-### 2. utils.py
-You might find some useful tools in utils.py
-- **step()**: Move your agent
-- **generate_random_env()**: Generate a random environment for debugging
-- **load_env()**: Load the test environments
-- **save_env()**: Save the environment for reproducing results
-- **plot_env()**: For a quick visualization of your current env, including: agent, key, door, and the goal
-- **draw_gif_from_seq()**: Draw and save a gif image from a given action sequence.
+```
+python main2.py
+```
+<p align="center">
+<img src="gif/doorkey_rand_8-34.gif" alt="Door-key Problem" width="500"/></br>
+</p>
 
 

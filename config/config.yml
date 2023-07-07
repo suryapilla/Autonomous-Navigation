@@ -1,0 +1,2 @@
+ENV_PATH: "./envs/example-8x8.env"
+GIF_PATH: "./gif/TEST"
